@@ -12,7 +12,7 @@ class Settings(BaseSettings):
 
     DASHSCOPE_API_KEY: str = ""
     QWEN_MODEL: str = "qwen3.6-plus"
-    QWEN_VL_MODEL: str = "qwen-vl-max"
+    QWEN_VL_MODEL: str = "qwen3-vl-max"
 
     SMS_ACCESS_KEY_ID: str = ""
     SMS_ACCESS_KEY_SECRET: str = ""
@@ -20,7 +20,8 @@ class Settings(BaseSettings):
     SMS_TEMPLATE_CODE: str = ""
 
     DEBUG: bool = True
-    CORS_ORIGINS: str = '["http://localhost:5173","http://localhost:3000"]'
+    PORT: int = 8002
+    CORS_ORIGINS: str = '["http://localhost:5173","http://localhost:3000","https://pwyyeye.github.io"]'
 
     @property
     def cors_origins_list(self) -> List[str]:
