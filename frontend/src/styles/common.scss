@@ -1,0 +1,33 @@
+.flex-row { display: flex; flex-direction: row; }
+.flex-col { display: flex; flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.flex-1 { flex: 1; }
+.gap-sm { gap: 8rpx; }
+.gap-md { gap: 16rpx; }
+.gap-lg { gap: 24rpx; }
+.text-center { text-align: center; }
+.text-primary { color: #4a90d9; }
+.text-secondary { color: #666; }
+.text-muted { color: #999; }
+.bg-white { background: #ffffff; }
+.bg-page { background: #f5f7fa; }
+.rounded { border-radius: 16rpx; }
+.p-sm { padding: 16rpx; }
+.p-md { padding: 24rpx; }
+.p-lg { padding: 32rpx; }
+.m-sm { margin: 16rpx; }
+.m-md { margin: 24rpx; }
+.m-lg { margin: 32rpx; }
+.mb-sm { margin-bottom: 16rpx; }
+.mb-md { margin-bottom: 24rpx; }
+.mb-lg { margin-bottom: 32rpx; }
+
+// Elder mode overrides
+.elder-mode {
+  page { font-size: 36rpx; }
+  .action-item { min-height: 96rpx; }
+  .menu-item { padding: 36rpx 24rpx; }
+  .btn { height: 108rpx; line-height: 108rpx; font-size: 34rpx; }
+}
