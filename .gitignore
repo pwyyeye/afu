@@ -2,7 +2,7 @@ node_modules/
 dist/
 .DS_Store
 *.local
-.env
+backend/.env
 __pycache__/
 *.pyc
 venv/
@@ -10,3 +10,4 @@ venv/
 data/
 .idea/
 .vscode/
+.gstack/

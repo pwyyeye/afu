@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import type { ChatSession, ChatMessage } from '@/types/chat'
 import { request } from '@/api/request'
 
-const BASE_URL = 'http://localhost:8002'
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8002'
 
 export const useChatStore = defineStore('chat', () => {
   const sessions = ref<ChatSession[]>([])
