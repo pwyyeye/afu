@@ -1,3 +1,4 @@
+from typing import Optional
 from fastapi import Depends, Header
 from sqlalchemy.orm import Session
 from app.database.session import get_db
@@ -7,10 +8,10 @@ from app.models.user import User
 
 
 def get_current_user(
-    authorization: str = Header(..., alias="Authorization"),
+    authorization: Optional[str] = Header(None, alias="Authorization"),
     db: Session = Depends(get_db),
 ) -> User:
-    if not authorization.startswith("Bearer "):
+    if not authorization or not authorization.startswith("Bearer "):
         raise UnauthorizedException()
     token = authorization[7:]
     user_id = verify_token(token)

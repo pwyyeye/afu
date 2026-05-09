@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     REFRESH_TOKEN_EXPIRE_DAYS: int = 7
 
     DASHSCOPE_API_KEY: str = ""
-    QWEN_MODEL: str = "qwen-plus"
+    QWEN_MODEL: str = "qwen3.6-plus"
     QWEN_VL_MODEL: str = "qwen-vl-max"
 
     SMS_ACCESS_KEY_ID: str = ""

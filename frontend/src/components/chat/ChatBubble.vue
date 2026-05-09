@@ -30,7 +30,7 @@
           class="bubble-text"
           :class="{ 'typing-text': isStreaming && isLast }"
         >{{ displayContent }}</text>
-        <text v-if="isStreaming && isLast" class="cursor">|</text>
+        <text v-if="showCursor" class="cursor">|</text>
       </view>
 
       <!-- AI disclaimer -->
@@ -46,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { ref, computed, watch, onUnmounted } from 'vue'
 import type { ChatMessage } from '@/types/chat'
 
 const props = defineProps<{
@@ -57,11 +57,79 @@ const props = defineProps<{
 
 const isUser = computed(() => props.message.role === 'user')
 
+// Typewriter effect state
+const displayedLength = ref(0)
+let typeTimer: ReturnType<typeof setInterval> | null = null
+let pendingChars = 0
+
 const displayContent = computed(() => {
   if (!props.message.content && props.isStreaming && props.isLast) {
     return '思考中'
   }
+  if (props.isStreaming && props.isLast && displayedLength.value < props.message.content.length) {
+    return props.message.content.slice(0, displayedLength.value)
+  }
   return props.message.content
+})
+
+const showCursor = computed(() => {
+  if (!props.isStreaming || !props.isLast) return false
+  // Show cursor while typing, or while waiting for content
+  return displayedLength.value < (props.message.content?.length || 0) || !props.message.content
+})
+
+// Start typewriter when content changes during streaming
+watch(
+  () => props.message.content,
+  (newVal, oldVal) => {
+    if (!props.isStreaming || !props.isLast) {
+      displayedLength.value = newVal?.length || 0
+      return
+    }
+    if (!oldVal && newVal) {
+      // First content chunk - initialize
+      displayedLength.value = 0
+      startTyping()
+    } else if (newVal && newVal.length > (oldVal?.length || 0)) {
+      // New characters received - they'll be picked up by the timer
+      pendingChars = newVal.length - displayedLength.value
+    }
+  }
+)
+
+// Watch isStreaming - when it becomes false, show all content immediately
+watch(
+  () => props.isStreaming,
+  (streaming) => {
+    if (!streaming) {
+      stopTyping()
+      displayedLength.value = props.message.content?.length || 0
+    }
+  }
+)
+
+function startTyping() {
+  if (typeTimer) return
+  typeTimer = setInterval(() => {
+    const total = props.message.content?.length || 0
+    if (displayedLength.value >= total) {
+      stopTyping()
+      return
+    }
+    // Typing speed: 2 chars per tick (80ms), so ~25 chars/sec
+    displayedLength.value = Math.min(displayedLength.value + 2, total)
+  }, 80)
+}
+
+function stopTyping() {
+  if (typeTimer) {
+    clearInterval(typeTimer)
+    typeTimer = null
+  }
+}
+
+onUnmounted(() => {
+  stopTyping()
 })
 
 function previewImage() {
