@@ -25,6 +25,8 @@ class Settings(BaseSettings):
 
     @property
     def cors_origins_list(self) -> List[str]:
+        if not self.CORS_ORIGINS:
+            return []
         return json.loads(self.CORS_ORIGINS)
 
     class Config:
