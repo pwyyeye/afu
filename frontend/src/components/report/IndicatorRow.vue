@@ -63,30 +63,30 @@ const trendLabels: Record<string, string> = {
   flex-shrink: 0;
 }
 
-.dot-red { background: #e74c3c; }
-.dot-yellow { background: #f39c12; }
-.dot-blue { background: #3498db; }
-.dot-green { background: #27ae60; }
+.dot-red { background: #E07070; }
+.dot-yellow { background: #E8B84A; }
+.dot-blue { background: #5A9BB8; }
+.dot-green { background: #5CB87A; }
 
 .indicator-name {
   flex: 1;
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
 }
 
 .indicator-value {
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
   font-weight: 500;
 }
 
 .value-abnormal {
-  color: #e74c3c;
+  color: #E07070;
 }
 
 .indicator-unit {
   font-size: 22rpx;
-  color: #999;
+  color: #A0A0A5;
   font-weight: normal;
 }
 
@@ -101,12 +101,12 @@ const trendLabels: Record<string, string> = {
 
 .meta-label {
   font-size: 22rpx;
-  color: #999;
+  color: #A0A0A5;
 }
 
 .meta-value {
   font-size: 22rpx;
-  color: #666;
+  color: #6B6B70;
 }
 
 .trend-tag {
@@ -116,20 +116,20 @@ const trendLabels: Record<string, string> = {
   margin-left: auto;
 }
 
-.trend-rising { background: #fdecea; color: #e74c3c; }
-.trend-falling { background: #e8f5e9; color: #27ae60; }
-.trend-stable { background: #e3f2fd; color: #3498db; }
+.trend-rising { background: #FCEAEA; color: #E07070; }
+.trend-falling { background: #E8F8EF; color: #5CB87A; }
+.trend-stable { background: #E8F4F8; color: #5A9BB8; }
 
 .indicator-explanation {
   margin-top: 12rpx;
   padding: 16rpx;
   background: #f8f9fa;
-  border-radius: 8rpx;
+  border-radius: 12rpx;
 }
 
 .explanation-text {
   font-size: 24rpx;
-  color: #666;
+  color: #6B6B70;
   line-height: 1.6;
 }
 
@@ -137,7 +137,7 @@ const trendLabels: Record<string, string> = {
   display: block;
   text-align: center;
   font-size: 22rpx;
-  color: #4a90d9;
+  color: #3B82A0;
   margin-top: 8rpx;
 }
 </style>

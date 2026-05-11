@@ -37,13 +37,13 @@ defineEmits<{
 
 .empty-title {
   font-size: 30rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-bottom: 12rpx;
 }
 
 .empty-desc {
   font-size: 24rpx;
-  color: #ccc;
+  color: #C5C5C8;
   text-align: center;
   line-height: 1.5;
 }
@@ -51,7 +51,7 @@ defineEmits<{
 .empty-action {
   margin-top: 32rpx;
   padding: 16rpx 48rpx;
-  background: #4a90d9;
+  background: #3B82A0;
   color: #fff;
   font-size: 28rpx;
   border-radius: 999rpx;

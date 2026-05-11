@@ -6,7 +6,7 @@
         <text class="toggle-title">长辈模式</text>
         <text class="toggle-desc">更大的字体、更清晰的界面、语音优先</text>
       </view>
-      <switch :checked="settingsStore.elderMode" @change="toggleElderMode" color="#4a90d9" />
+      <switch :checked="settingsStore.elderMode" @change="toggleElderMode" color="#3B82A0" />
     </view>
 
     <!-- Preview -->
@@ -80,7 +80,7 @@ function toggleElderMode() {
   display: flex;
   align-items: center;
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   padding: 28rpx 24rpx;
   margin-bottom: 32rpx;
   box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
@@ -93,13 +93,13 @@ function toggleElderMode() {
 .toggle-title {
   font-size: 32rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
   display: block;
 }
 
 .toggle-desc {
   font-size: 24rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-top: 6rpx;
   display: block;
 }
@@ -107,7 +107,7 @@ function toggleElderMode() {
 .section-title {
   font-size: 28rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
   margin-bottom: 16rpx;
   display: block;
 }
@@ -118,7 +118,7 @@ function toggleElderMode() {
 
 .preview-card {
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   overflow: hidden;
   box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
 }
@@ -131,7 +131,7 @@ function toggleElderMode() {
 
 .preview-label {
   font-size: 24rpx;
-  color: #999;
+  color: #A0A0A5;
 }
 
 .preview-content {
@@ -141,7 +141,7 @@ function toggleElderMode() {
 .preview-big {
   font-size: 36rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
   display: block;
   margin-bottom: 16rpx;
 }
@@ -152,7 +152,7 @@ function toggleElderMode() {
 
 .preview-normal {
   font-size: 26rpx;
-  color: #666;
+  color: #6B6B70;
   line-height: 1.6;
   display: block;
   margin-bottom: 20rpx;
@@ -165,7 +165,7 @@ function toggleElderMode() {
 .preview-btn {
   display: inline-block;
   padding: 16rpx 40rpx;
-  background: #4a90d9;
+  background: #3B82A0;
   color: #fff;
   border-radius: 12rpx;
   font-size: 28rpx;
@@ -174,7 +174,7 @@ function toggleElderMode() {
 .elder-preview .preview-btn {
   padding: 24rpx 56rpx;
   font-size: 34rpx;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
 }
 
 .features-section {
@@ -189,7 +189,7 @@ function toggleElderMode() {
 
 .feature-card {
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   padding: 28rpx 20rpx;
   display: flex;
   flex-direction: column;
@@ -206,12 +206,12 @@ function toggleElderMode() {
 .feature-name {
   font-size: 28rpx;
   font-weight: 500;
-  color: #333;
+  color: #2C2C2E;
 }
 
 .feature-desc {
   font-size: 22rpx;
-  color: #999;
+  color: #A0A0A5;
   text-align: center;
 }
 </style>

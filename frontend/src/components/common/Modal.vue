@@ -51,7 +51,7 @@ function close() {
 
 .modal-content {
   background: #fff;
-  border-radius: 24rpx;
+  border-radius: 28rpx;
   width: 80%;
   max-height: 80vh;
   overflow: hidden;
@@ -71,12 +71,12 @@ function close() {
 .modal-title {
   font-size: 32rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
 }
 
 .modal-close {
   font-size: 40rpx;
-  color: #999;
+  color: #A0A0A5;
   padding: 8rpx;
 }
 

@@ -85,7 +85,7 @@ function goToCompare() {
 
 .summary-card {
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   padding: 28rpx;
   margin-bottom: 24rpx;
 }
@@ -100,12 +100,12 @@ function goToCompare() {
 .summary-title {
   font-size: 32rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
 }
 
 .summary-text {
   font-size: 26rpx;
-  color: #666;
+  color: #6B6B70;
   line-height: 1.6;
 }
 
@@ -116,7 +116,7 @@ function goToCompare() {
 .section-title {
   font-size: 30rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
   margin-bottom: 16rpx;
   display: block;
 }
@@ -131,14 +131,14 @@ function goToCompare() {
   padding: 24rpx 32rpx;
   padding-bottom: calc(24rpx + env(safe-area-inset-bottom));
   background: #fff;
-  border-top: 1rpx solid #e8e8e8;
+  border-top: 1rpx solid #E8E5E0;
 }
 
 .action-btn {
   flex: 1;
   height: 88rpx;
   line-height: 88rpx;
-  background: #4a90d9;
+  background: #3B82A0;
   color: #fff;
   font-size: 28rpx;
   border-radius: 12rpx;
@@ -147,8 +147,8 @@ function goToCompare() {
 
 .action-btn.secondary {
   background: #fff;
-  color: #4a90d9;
-  border: 2rpx solid #4a90d9;
+  color: #3B82A0;
+  border: 2rpx solid #3B82A0;
 }
 
 .loading {
@@ -159,6 +159,6 @@ function goToCompare() {
 
 .loading-text {
   font-size: 28rpx;
-  color: #999;
+  color: #A0A0A5;
 }
 </style>

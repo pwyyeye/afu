@@ -243,7 +243,7 @@ async function saveProfile() {
 
 .section-card {
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   padding: 24rpx;
   margin-bottom: 24rpx;
 }
@@ -251,7 +251,7 @@ async function saveProfile() {
 .section-title {
   font-size: 30rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
   margin-bottom: 20rpx;
   display: block;
 }
@@ -276,7 +276,7 @@ async function saveProfile() {
 
 .form-label {
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
   min-width: 140rpx;
 }
 
@@ -291,11 +291,11 @@ async function saveProfile() {
   width: 100%;
   min-height: 120rpx;
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
   line-height: 1.6;
   padding: 12rpx;
   background: #f8f9fa;
-  border-radius: 8rpx;
+  border-radius: 12rpx;
 }
 
 .picker-value {
@@ -306,11 +306,11 @@ async function saveProfile() {
 
 .picker-value text {
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
 }
 
 .arrow {
-  color: #ccc;
+  color: #C5C5C8;
   font-size: 32rpx;
 }
 
@@ -320,13 +320,13 @@ async function saveProfile() {
   gap: 12rpx;
   padding: 16rpx;
   background: #f8f9fa;
-  border-radius: 8rpx;
+  border-radius: 12rpx;
   margin-top: 16rpx;
 }
 
 .bmi-label {
   font-size: 26rpx;
-  color: #666;
+  color: #6B6B70;
 }
 
 .bmi-value {
@@ -334,14 +334,14 @@ async function saveProfile() {
   font-weight: bold;
 }
 
-.bmi-under { color: #3498db; }
-.bmi-normal { color: #27ae60; }
-.bmi-over { color: #f39c12; }
-.bmi-obese { color: #e74c3c; }
+.bmi-under { color: #5A9BB8; }
+.bmi-normal { color: #5CB87A; }
+.bmi-over { color: #E8B84A; }
+.bmi-obese { color: #E07070; }
 
 .bmi-desc {
   font-size: 24rpx;
-  color: #999;
+  color: #A0A0A5;
 }
 
 .save-btn {
@@ -353,7 +353,7 @@ async function saveProfile() {
   margin-bottom: calc(24rpx + env(safe-area-inset-bottom));
   height: 96rpx;
   line-height: 96rpx;
-  background: #4a90d9;
+  background: #3B82A0;
   color: #fff;
   font-size: 32rpx;
   font-weight: bold;

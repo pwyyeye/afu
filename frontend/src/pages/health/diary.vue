@@ -188,7 +188,7 @@ async function saveDiary() {
 
 .write-card {
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   padding: 28rpx;
   margin-bottom: 32rpx;
   box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
@@ -197,7 +197,7 @@ async function saveDiary() {
 .section-title {
   font-size: 30rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
   margin-bottom: 20rpx;
   display: block;
 }
@@ -206,7 +206,7 @@ async function saveDiary() {
   width: 100%;
   height: 180rpx;
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
   line-height: 1.6;
   background: #f8f9fa;
   border-radius: 12rpx;
@@ -219,7 +219,7 @@ async function saveDiary() {
 
 .mood-label {
   font-size: 26rpx;
-  color: #666;
+  color: #6B6B70;
   margin-bottom: 12rpx;
   display: block;
 }
@@ -242,7 +242,7 @@ async function saveDiary() {
 
   &.mood-active {
     opacity: 1;
-    background: #e8f5e9;
+    background: #E8F8EF;
     transform: scale(1.05);
   }
 }
@@ -253,7 +253,7 @@ async function saveDiary() {
 
 .mood-text {
   font-size: 20rpx;
-  color: #666;
+  color: #6B6B70;
 }
 
 .tags-row {
@@ -271,10 +271,10 @@ async function saveDiary() {
   border-radius: 999rpx;
   background: #f0f0f0;
   font-size: 24rpx;
-  color: #666;
+  color: #6B6B70;
 
   &.tag-active {
-    background: #4a90d9;
+    background: #3B82A0;
     color: #fff;
   }
 }
@@ -294,13 +294,13 @@ async function saveDiary() {
 
 .metric-label {
   font-size: 24rpx;
-  color: #666;
+  color: #6B6B70;
 }
 
 .metric-input {
   height: 72rpx;
   background: #f8f9fa;
-  border-radius: 8rpx;
+  border-radius: 12rpx;
   text-align: center;
   font-size: 28rpx;
 }
@@ -309,7 +309,7 @@ async function saveDiary() {
   width: 100%;
   height: 88rpx;
   line-height: 88rpx;
-  background: linear-gradient(135deg, #4a90d9, #357abd);
+  background: linear-gradient(135deg, #3B82A0, #2D6A82);
   color: #fff;
   font-size: 30rpx;
   font-weight: 500;
@@ -318,7 +318,7 @@ async function saveDiary() {
   margin-top: 24rpx;
 
   &[disabled] {
-    background: #a0c4e8;
+    background: #8FBFDB;
   }
 }
 
@@ -328,7 +328,7 @@ async function saveDiary() {
 
 .diary-card {
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   padding: 24rpx;
   margin-bottom: 16rpx;
   box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.04);
@@ -346,7 +346,7 @@ async function saveDiary() {
 
 .diary-date {
   font-size: 24rpx;
-  color: #999;
+  color: #A0A0A5;
 }
 
 .diary-mood {
@@ -355,7 +355,7 @@ async function saveDiary() {
 
 .diary-content {
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
   line-height: 1.6;
 }
 
@@ -371,7 +371,7 @@ async function saveDiary() {
   padding: 4rpx 16rpx;
   border-radius: 999rpx;
   background: #f0f0f0;
-  color: #666;
+  color: #6B6B70;
 }
 
 .diary-metrics {
@@ -384,7 +384,7 @@ async function saveDiary() {
 
 .diary-metric {
   font-size: 22rpx;
-  color: #4a90d9;
+  color: #3B82A0;
 }
 
 .empty {
@@ -401,13 +401,13 @@ async function saveDiary() {
 
 .empty-text {
   font-size: 30rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-bottom: 8rpx;
 }
 
 .empty-desc {
   font-size: 24rpx;
-  color: #ccc;
+  color: #C5C5C8;
   text-align: center;
 }
 </style>

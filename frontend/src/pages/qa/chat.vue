@@ -111,7 +111,7 @@ function loadMore() {
   flex-direction: column;
   height: 100vh;
   height: 100dvh;
-  background: #f5f7fa;
+  background: #F8F6F3;
 }
 
 .chat-header {
@@ -121,20 +121,20 @@ function loadMore() {
   padding: 12rpx 24rpx;
   padding-top: calc(var(--status-bar-height, 44px) + 8px);
   background: #fff;
-  border-bottom: 1rpx solid #e8e8e8;
+  border-bottom: 1rpx solid #E8E5E0;
   flex-shrink: 0;
 }
 
 .back-btn {
   font-size: 36rpx;
-  color: #333;
+  color: #2C2C2E;
   padding: 8rpx 16rpx;
 }
 
 .header-title {
   font-size: 32rpx;
   font-weight: 500;
-  color: #333;
+  color: #2C2C2E;
 }
 
 .header-right {

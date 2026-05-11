@@ -109,11 +109,11 @@ function goToEdit(id: string) {
   width: 100%;
   height: 96rpx;
   line-height: 96rpx;
-  background: linear-gradient(135deg, #4a90d9, #357abd);
+  background: linear-gradient(135deg, #3B82A0, #2D6A82);
   color: #fff;
   font-size: 30rpx;
   font-weight: 500;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   border: none;
   margin-bottom: 32rpx;
   box-shadow: 0 8rpx 24rpx rgba(74, 144, 217, 0.3);
@@ -130,7 +130,7 @@ function goToEdit(id: string) {
   gap: 24rpx;
   padding: 28rpx 24rpx;
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   margin-bottom: 16rpx;
   box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
 }
@@ -164,7 +164,7 @@ function goToEdit(id: string) {
 
 .member-name {
   font-size: 32rpx;
-  color: #333;
+  color: #2C2C2E;
   font-weight: 600;
 }
 
@@ -177,7 +177,7 @@ function goToEdit(id: string) {
 .tag-spouse { background: #fff0f6; color: #eb2f96; }
 .tag-parent { background: #fff7e6; color: #fa8c16; }
 .tag-child { background: #e6f7ff; color: #1890ff; }
-.tag-other { background: #f0f0f0; color: #999; }
+.tag-other { background: #f0f0f0; color: #A0A0A5; }
 
 .member-meta {
   display: flex;
@@ -187,12 +187,12 @@ function goToEdit(id: string) {
 
 .meta-item {
   font-size: 24rpx;
-  color: #999;
+  color: #A0A0A5;
 }
 
 .member-arrow {
   font-size: 36rpx;
-  color: #ccc;
+  color: #C5C5C8;
   flex-shrink: 0;
 }
 
@@ -210,12 +210,12 @@ function goToEdit(id: string) {
 
 .empty-text {
   font-size: 32rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-bottom: 12rpx;
 }
 
 .empty-desc {
   font-size: 24rpx;
-  color: #ccc;
+  color: #C5C5C8;
 }
 </style>

@@ -63,7 +63,7 @@ function goToCompare() {
   flex-direction: column;
   align-items: center;
   padding: 48rpx;
-  background: linear-gradient(135deg, #4a90d9 0%, #6ba3e0 100%);
+  background: linear-gradient(135deg, #3B82A0 0%, #5A9BB8 100%);
   border-radius: 20rpx;
   margin-bottom: 32rpx;
 }
@@ -95,12 +95,12 @@ function goToCompare() {
 .section-title {
   font-size: 32rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
 }
 
 .section-action {
   font-size: 26rpx;
-  color: #4a90d9;
+  color: #3B82A0;
 }
 
 .empty {
@@ -117,12 +117,12 @@ function goToCompare() {
 
 .empty-text {
   font-size: 30rpx;
-  color: #999;
+  color: #A0A0A5;
 }
 
 .empty-desc {
   font-size: 24rpx;
-  color: #ccc;
+  color: #C5C5C8;
   margin-top: 12rpx;
 }
 </style>

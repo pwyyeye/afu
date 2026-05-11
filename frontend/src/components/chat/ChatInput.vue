@@ -114,7 +114,7 @@ function chooseImage() {
 <style scoped lang="scss">
 .chat-input-container {
   background: #ffffff;
-  border-top: 1rpx solid #e8e8e8;
+  border-top: 1rpx solid #E8E5E0;
   padding: 16rpx 24rpx;
   padding-bottom: calc(16rpx + env(safe-area-inset-bottom));
 }
@@ -135,7 +135,7 @@ function chooseImage() {
 }
 
 .icon-btn.active {
-  background: #e8f0fe;
+  background: #E8F4F8;
   border-radius: 50%;
 }
 
@@ -146,7 +146,7 @@ function chooseImage() {
 .text-input {
   flex: 1;
   height: 72rpx;
-  background: #f5f7fa;
+  background: #F8F6F3;
   border-radius: 36rpx;
   padding: 0 24rpx;
   font-size: 28rpx;
@@ -158,17 +158,17 @@ function chooseImage() {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f5f7fa;
+  background: #F8F6F3;
   border-radius: 36rpx;
 }
 
 .voice-press-text {
   font-size: 28rpx;
-  color: #666;
+  color: #6B6B70;
 }
 
 .voice-press-btn:active {
-  background: #e8f0fe;
+  background: #E8F4F8;
 }
 
 .send-btn {
@@ -176,7 +176,7 @@ function chooseImage() {
   height: 72rpx;
   line-height: 72rpx;
   text-align: center;
-  background: #4a90d9;
+  background: #3B82A0;
   color: #fff;
   font-size: 28rpx;
   border-radius: 36rpx;
@@ -185,7 +185,7 @@ function chooseImage() {
   flex-shrink: 0;
 
   &[disabled] {
-    background: #a0c4e8;
+    background: #8FBFDB;
   }
 }
 </style>

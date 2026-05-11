@@ -191,7 +191,7 @@ function deleteMember() {
   uni.showModal({
     title: '确认删除',
     content: '删除后不可恢复，确定删除该家庭成员？',
-    confirmColor: '#e74c3c',
+    confirmColor: '#E07070',
     success: async (res) => {
       if (res.confirm) {
         try {
@@ -219,7 +219,7 @@ function deleteMember() {
 
 .section-card {
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   padding: 24rpx;
   margin-bottom: 24rpx;
 }
@@ -227,7 +227,7 @@ function deleteMember() {
 .section-title {
   font-size: 30rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
   margin-bottom: 20rpx;
   display: block;
 }
@@ -252,7 +252,7 @@ function deleteMember() {
 
 .form-label {
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
   min-width: 140rpx;
 }
 
@@ -267,11 +267,11 @@ function deleteMember() {
   width: 100%;
   min-height: 100rpx;
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
   line-height: 1.6;
   padding: 12rpx;
   background: #f8f9fa;
-  border-radius: 8rpx;
+  border-radius: 12rpx;
 }
 
 .picker-value {
@@ -282,11 +282,11 @@ function deleteMember() {
 
 .picker-value text {
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
 }
 
 .arrow {
-  color: #ccc;
+  color: #C5C5C8;
   font-size: 32rpx;
 }
 
@@ -294,11 +294,11 @@ function deleteMember() {
   width: 100%;
   height: 96rpx;
   line-height: 96rpx;
-  background: linear-gradient(135deg, #4a90d9, #357abd);
+  background: linear-gradient(135deg, #3B82A0, #2D6A82);
   color: #fff;
   font-size: 32rpx;
   font-weight: bold;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   border: none;
   margin-bottom: 16rpx;
 }
@@ -308,9 +308,9 @@ function deleteMember() {
   height: 88rpx;
   line-height: 88rpx;
   background: #fff;
-  color: #e74c3c;
+  color: #E07070;
   font-size: 28rpx;
-  border-radius: 16rpx;
-  border: 2rpx solid #e74c3c;
+  border-radius: 20rpx;
+  border: 2rpx solid #E07070;
 }
 </style>

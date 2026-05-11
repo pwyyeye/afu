@@ -116,14 +116,14 @@
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "阿福健康",
     "navigationBarBackgroundColor": "#ffffff",
-    "backgroundColor": "#f5f7fa",
+    "backgroundColor": "#F8F6F3",
     "app-plus": {
       "titleNView": false
     }
   },
   "tabBar": {
-    "color": "#999999",
-    "selectedColor": "#4a90d9",
+    "color": "#A0A0A5",
+    "selectedColor": "#3B82A0",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [

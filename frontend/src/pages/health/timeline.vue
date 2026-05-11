@@ -110,11 +110,11 @@ function dotClass(type?: string): string {
   border-radius: 999rpx;
   background: #f0f0f0;
   font-size: 26rpx;
-  color: #666;
+  color: #6B6B70;
   white-space: nowrap;
 
   &.active {
-    background: #4a90d9;
+    background: #3B82A0;
     color: #fff;
   }
 }
@@ -125,7 +125,7 @@ function dotClass(type?: string): string {
 
 .group-date {
   font-size: 24rpx;
-  color: #999;
+  color: #A0A0A5;
   font-weight: 500;
   margin-bottom: 16rpx;
   display: block;
@@ -145,7 +145,7 @@ function dotClass(type?: string): string {
     top: 28rpx;
     bottom: 0;
     width: 2rpx;
-    background: #e8e8e8;
+    background: #E8E5E0;
   }
 
   &:last-child::before {
@@ -161,11 +161,11 @@ function dotClass(type?: string): string {
   margin-top: 4rpx;
 }
 
-.dot-report { background: #4a90d9; }
-.dot-diary { background: #27ae60; }
-.dot-goal { background: #f39c12; }
-.dot-reminder { background: #e74c3c; }
-.dot-default { background: #999; }
+.dot-report { background: #3B82A0; }
+.dot-diary { background: #5CB87A; }
+.dot-goal { background: #E8B84A; }
+.dot-reminder { background: #E07070; }
+.dot-default { background: #A0A0A5; }
 
 .timeline-content {
   flex: 1;
@@ -187,13 +187,13 @@ function dotClass(type?: string): string {
 
 .timeline-title {
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
   font-weight: 500;
 }
 
 .timeline-desc {
   font-size: 24rpx;
-  color: #666;
+  color: #6B6B70;
   margin-top: 8rpx;
   display: block;
   line-height: 1.5;
@@ -213,13 +213,13 @@ function dotClass(type?: string): string {
 
 .empty-text {
   font-size: 32rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-bottom: 12rpx;
 }
 
 .empty-desc {
   font-size: 24rpx;
-  color: #ccc;
+  color: #C5C5C8;
   text-align: center;
   line-height: 1.5;
 }

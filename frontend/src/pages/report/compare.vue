@@ -94,13 +94,13 @@ function getBarHeight(value: number, data: { value: number }[]) {
 .page-title {
   font-size: 36rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
   display: block;
 }
 
 .page-desc {
   font-size: 26rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-top: 8rpx;
   display: block;
   margin-bottom: 32rpx;
@@ -112,7 +112,7 @@ function getBarHeight(value: number, data: { value: number }[]) {
 
 .filter-label {
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
   margin-bottom: 16rpx;
   display: block;
 }
@@ -127,26 +127,26 @@ function getBarHeight(value: number, data: { value: number }[]) {
   padding: 12rpx 24rpx;
   background: #fff;
   border-radius: 999rpx;
-  border: 2rpx solid #e8e8e8;
+  border: 2rpx solid #E8E5E0;
 }
 
 .chip-active {
-  background: #e8f0fe;
-  border-color: #4a90d9;
+  background: #E8F4F8;
+  border-color: #3B82A0;
 }
 
 .chip-text {
   font-size: 26rpx;
-  color: #666;
+  color: #6B6B70;
 }
 
 .chip-active .chip-text {
-  color: #4a90d9;
+  color: #3B82A0;
 }
 
 .chart-card {
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   padding: 24rpx;
   margin-bottom: 24rpx;
 }
@@ -154,7 +154,7 @@ function getBarHeight(value: number, data: { value: number }[]) {
 .chart-title {
   font-size: 28rpx;
   font-weight: 500;
-  color: #333;
+  color: #2C2C2E;
   margin-bottom: 20rpx;
   display: block;
 }
@@ -178,20 +178,20 @@ function getBarHeight(value: number, data: { value: number }[]) {
 
 .chart-bar {
   width: 48rpx;
-  background: linear-gradient(180deg, #4a90d9 0%, #6ba3e0 100%);
-  border-radius: 8rpx 8rpx 0 0;
+  background: linear-gradient(180deg, #3B82A0 0%, #5A9BB8 100%);
+  border-radius: 12rpx 8rpx 0 0;
   min-height: 10rpx;
 }
 
 .chart-value {
   font-size: 22rpx;
-  color: #4a90d9;
+  color: #3B82A0;
   margin-top: 8rpx;
 }
 
 .chart-year {
   font-size: 22rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-top: 4rpx;
 }
 
@@ -202,6 +202,6 @@ function getBarHeight(value: number, data: { value: number }[]) {
 
 .empty-text {
   font-size: 28rpx;
-  color: #999;
+  color: #A0A0A5;
 }
 </style>

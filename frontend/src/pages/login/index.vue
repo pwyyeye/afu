@@ -108,7 +108,7 @@ async function handleLogin() {
   display: flex;
   flex-direction: column;
   padding: 0 48rpx;
-  background: linear-gradient(180deg, #e8f0fe 0%, #f5f7fa 40%);
+  background: linear-gradient(180deg, #E8F4F8 0%, #F8F6F3 40%);
 }
 
 .logo-area {
@@ -127,12 +127,12 @@ async function handleLogin() {
 .app-name {
   font-size: 44rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
 }
 
 .app-desc {
   font-size: 28rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-top: 8rpx;
 }
 
@@ -146,7 +146,7 @@ async function handleLogin() {
 
 .label {
   font-size: 28rpx;
-  color: #666;
+  color: #6B6B70;
   margin-bottom: 12rpx;
   display: block;
 }
@@ -158,7 +158,7 @@ async function handleLogin() {
   border-radius: 12rpx;
   padding: 0 24rpx;
   font-size: 30rpx;
-  border: 2rpx solid #e8e8e8;
+  border: 2rpx solid #E8E5E0;
 }
 
 .code-row {
@@ -175,7 +175,7 @@ async function handleLogin() {
   height: 88rpx;
   line-height: 88rpx;
   text-align: center;
-  background: #4a90d9;
+  background: #3B82A0;
   color: #fff;
   font-size: 26rpx;
   border-radius: 12rpx;
@@ -183,8 +183,8 @@ async function handleLogin() {
   padding: 0;
 
   &[disabled] {
-    background: #ccc;
-    color: #999;
+    background: #C5C5C8;
+    color: #A0A0A5;
   }
 }
 
@@ -192,7 +192,7 @@ async function handleLogin() {
   width: 100%;
   height: 96rpx;
   line-height: 96rpx;
-  background: #4a90d9;
+  background: #3B82A0;
   color: #fff;
   font-size: 32rpx;
   font-weight: bold;
@@ -201,7 +201,7 @@ async function handleLogin() {
   margin-top: 48rpx;
 
   &[disabled] {
-    background: #a0c4e8;
+    background: #8FBFDB;
   }
 }
 
@@ -212,13 +212,13 @@ async function handleLogin() {
 
 .footer-text {
   font-size: 24rpx;
-  color: #999;
+  color: #A0A0A5;
 }
 
 .dev-hint {
   display: block;
   font-size: 22rpx;
-  color: #4a90d9;
+  color: #3B82A0;
   margin-top: 12rpx;
   opacity: 0.6;
 }

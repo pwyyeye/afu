@@ -49,7 +49,7 @@ const statusLabels: Record<string, string> = {
 <style scoped lang="scss">
 .report-card {
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   padding: 24rpx;
   margin-bottom: 16rpx;
 }
@@ -63,7 +63,7 @@ const statusLabels: Record<string, string> = {
 
 .card-title {
   font-size: 30rpx;
-  color: #333;
+  color: #2C2C2E;
   font-weight: 500;
   flex: 1;
   overflow: hidden;
@@ -80,10 +80,10 @@ const statusLabels: Record<string, string> = {
   margin-left: 12rpx;
 }
 
-.light-red { background: #e74c3c; }
-.light-yellow { background: #f39c12; }
-.light-blue { background: #3498db; }
-.light-green { background: #27ae60; }
+.light-red { background: #E07070; }
+.light-yellow { background: #E8B84A; }
+.light-blue { background: #5A9BB8; }
+.light-green { background: #5CB87A; }
 
 .card-meta {
   display: flex;
@@ -98,7 +98,7 @@ const statusLabels: Record<string, string> = {
 
 .meta-text {
   font-size: 24rpx;
-  color: #666;
+  color: #6B6B70;
 }
 
 .card-footer {
@@ -109,7 +109,7 @@ const statusLabels: Record<string, string> = {
 
 .footer-date {
   font-size: 22rpx;
-  color: #999;
+  color: #A0A0A5;
 }
 
 .status-tag {
@@ -118,7 +118,7 @@ const statusLabels: Record<string, string> = {
   border-radius: 4rpx;
 }
 
-.status-processing { background: #fff3e0; color: #f39c12; }
-.status-completed { background: #e8f5e9; color: #27ae60; }
-.status-failed { background: #fdecea; color: #e74c3c; }
+.status-processing { background: #FFF3E6; color: #E8B84A; }
+.status-completed { background: #E8F8EF; color: #5CB87A; }
+.status-failed { background: #FCEAEA; color: #E07070; }
 </style>

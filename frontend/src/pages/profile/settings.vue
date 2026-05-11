@@ -5,11 +5,11 @@
       <text class="group-title">通用</text>
       <view class="settings-item">
         <text class="settings-label">消息通知</text>
-        <switch :checked="settingsStore.notifications" @change="toggleNotifications" color="#4a90d9" />
+        <switch :checked="settingsStore.notifications" @change="toggleNotifications" color="#3B82A0" />
       </view>
       <view class="settings-item">
         <text class="settings-label">语音自动播放</text>
-        <switch :checked="settingsStore.voiceAutoPlay" @change="toggleVoice" color="#4a90d9" />
+        <switch :checked="settingsStore.voiceAutoPlay" @change="toggleVoice" color="#3B82A0" />
       </view>
     </view>
 
@@ -138,7 +138,7 @@ function goTo(url: string) {
 
 .group-title {
   font-size: 24rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-bottom: 12rpx;
   margin-left: 8rpx;
   display: block;
@@ -152,7 +152,7 @@ function goTo(url: string) {
   border-bottom: 1rpx solid #f5f5f5;
 
   &:first-of-type {
-    border-radius: 16rpx 16rpx 0 0;
+    border-radius: 20rpx 16rpx 0 0;
   }
 
   &:last-child {
@@ -161,25 +161,25 @@ function goTo(url: string) {
   }
 
   &:only-of-type {
-    border-radius: 16rpx;
+    border-radius: 20rpx;
   }
 }
 
 .settings-label {
   flex: 1;
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
 }
 
 .settings-value {
   font-size: 26rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-right: 8rpx;
 }
 
 .settings-arrow {
   font-size: 32rpx;
-  color: #ccc;
+  color: #C5C5C8;
 }
 
 .font-size-options {
@@ -192,10 +192,10 @@ function goTo(url: string) {
   border-radius: 999rpx;
   background: #f0f0f0;
   font-size: 24rpx;
-  color: #666;
+  color: #6B6B70;
 
   &.size-active {
-    background: #4a90d9;
+    background: #3B82A0;
     color: #fff;
   }
 }

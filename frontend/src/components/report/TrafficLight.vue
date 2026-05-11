@@ -40,10 +40,10 @@ const icons: Record<string, string> = {
   flex-shrink: 0;
 }
 
-.light-red .light-circle { background: #e74c3c; }
-.light-yellow .light-circle { background: #f39c12; }
-.light-blue .light-circle { background: #3498db; }
-.light-green .light-circle { background: #27ae60; }
+.light-red .light-circle { background: #E07070; }
+.light-yellow .light-circle { background: #E8B84A; }
+.light-blue .light-circle { background: #5A9BB8; }
+.light-green .light-circle { background: #5CB87A; }
 
 .light-icon {
   font-size: 20rpx;
@@ -56,13 +56,13 @@ const icons: Record<string, string> = {
   font-weight: 500;
 }
 
-.light-red .light-label { color: #e74c3c; }
-.light-yellow .light-label { color: #f39c12; }
-.light-blue .light-label { color: #3498db; }
-.light-green .light-label { color: #27ae60; }
+.light-red .light-label { color: #E07070; }
+.light-yellow .light-label { color: #E8B84A; }
+.light-blue .light-label { color: #5A9BB8; }
+.light-green .light-label { color: #5CB87A; }
 
 .light-desc {
   font-size: 22rpx;
-  color: #999;
+  color: #A0A0A5;
 }
 </style>

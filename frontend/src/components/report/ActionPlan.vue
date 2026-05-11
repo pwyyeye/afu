@@ -47,14 +47,14 @@ function toggleCheck(index: number) {
 <style scoped lang="scss">
 .action-plan {
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   padding: 24rpx;
 }
 
 .plan-title {
   font-size: 30rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
   margin-bottom: 20rpx;
   display: block;
 }
@@ -76,10 +76,10 @@ function toggleCheck(index: number) {
   flex-shrink: 0;
 }
 
-.priority-red { background: #e74c3c; }
-.priority-yellow { background: #f39c12; }
-.priority-blue { background: #3498db; }
-.priority-green { background: #27ae60; }
+.priority-red { background: #E07070; }
+.priority-yellow { background: #E8B84A; }
+.priority-blue { background: #5A9BB8; }
+.priority-green { background: #5CB87A; }
 
 .action-content {
   flex: 1;
@@ -94,21 +94,21 @@ function toggleCheck(index: number) {
 
 .action-category {
   font-size: 20rpx;
-  color: #4a90d9;
-  background: #e8f0fe;
+  color: #3B82A0;
+  background: #E8F4F8;
   padding: 2rpx 8rpx;
   border-radius: 4rpx;
 }
 
 .action-title {
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
   font-weight: 500;
 }
 
 .action-desc {
   font-size: 24rpx;
-  color: #666;
+  color: #6B6B70;
   line-height: 1.5;
 }
 
@@ -125,8 +125,8 @@ function toggleCheck(index: number) {
 }
 
 .check-circle.checked {
-  background: #27ae60;
-  border-color: #27ae60;
+  background: #5CB87A;
+  border-color: #5CB87A;
 }
 
 .check-icon {

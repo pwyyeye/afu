@@ -16,10 +16,10 @@ onHide(() => {
 
 <style>
 page {
-  background-color: #f5f7fa;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #F8F6F3;
+  font-family: 'Plus Jakarta Sans', 'Source Sans 3', 'PingFang SC', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
   box-sizing: border-box;
 }
 

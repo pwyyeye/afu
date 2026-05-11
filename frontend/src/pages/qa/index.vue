@@ -51,7 +51,7 @@ function goToChat(sessionId: string) {
 .page {
   padding: 24rpx 32rpx;
   min-height: 100vh;
-  background: #f5f7fa;
+  background: #F8F6F3;
 }
 
 .new-chat {
@@ -60,8 +60,8 @@ function goToChat(sessionId: string) {
   justify-content: center;
   gap: 16rpx;
   height: 96rpx;
-  background: #4a90d9;
-  border-radius: 16rpx;
+  background: #3B82A0;
+  border-radius: 20rpx;
   margin-bottom: 32rpx;
 }
 
@@ -88,7 +88,7 @@ function goToChat(sessionId: string) {
   align-items: center;
   padding: 28rpx 24rpx;
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
 }
 
 .session-info {
@@ -98,7 +98,7 @@ function goToChat(sessionId: string) {
 
 .session-title {
   font-size: 30rpx;
-  color: #333;
+  color: #2C2C2E;
   font-weight: 500;
   display: block;
   overflow: hidden;
@@ -108,7 +108,7 @@ function goToChat(sessionId: string) {
 
 .session-preview {
   font-size: 24rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-top: 8rpx;
   display: block;
   overflow: hidden;
@@ -118,7 +118,7 @@ function goToChat(sessionId: string) {
 
 .session-time {
   font-size: 22rpx;
-  color: #ccc;
+  color: #C5C5C8;
   margin-left: 16rpx;
   flex-shrink: 0;
 }
@@ -132,12 +132,12 @@ function goToChat(sessionId: string) {
 
 .empty-text {
   font-size: 30rpx;
-  color: #999;
+  color: #A0A0A5;
 }
 
 .empty-desc {
   font-size: 24rpx;
-  color: #ccc;
+  color: #C5C5C8;
   margin-top: 12rpx;
 }
 </style>

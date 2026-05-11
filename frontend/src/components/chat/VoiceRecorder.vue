@@ -118,7 +118,7 @@ function cancel() {
 .recorder-panel {
   width: 500rpx;
   background: #fff;
-  border-radius: 24rpx;
+  border-radius: 28rpx;
   padding: 48rpx 32rpx;
   display: flex;
   flex-direction: column;
@@ -136,7 +136,7 @@ function cancel() {
 
 .wave-bar {
   width: 6rpx;
-  background: #4a90d9;
+  background: #3B82A0;
   border-radius: 3rpx;
   animation: wave 0.8s ease-in-out infinite alternate;
 }
@@ -149,13 +149,13 @@ function cancel() {
 .recorder-time {
   font-size: 48rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
   margin-bottom: 12rpx;
 }
 
 .recorder-hint {
   font-size: 24rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-bottom: 32rpx;
 }
 
@@ -177,11 +177,11 @@ function cancel() {
 
 .cancel-btn {
   background: #f0f0f0;
-  color: #666;
+  color: #6B6B70;
 }
 
 .send-btn {
-  background: #4a90d9;
+  background: #3B82A0;
   color: #fff;
 }
 </style>

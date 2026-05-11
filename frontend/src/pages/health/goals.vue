@@ -159,7 +159,7 @@ function showGoalActions(goal: any) {
           uni.showModal({
             title: '确认删除',
             content: '确定删除该目标？',
-            confirmColor: '#e74c3c',
+            confirmColor: '#E07070',
             success: async (r) => {
               if (r.confirm) {
                 await healthStore.deleteGoal(goal.id)
@@ -229,11 +229,11 @@ async function createGoal() {
   width: 100%;
   height: 96rpx;
   line-height: 96rpx;
-  background: linear-gradient(135deg, #27ae60, #219a52);
+  background: linear-gradient(135deg, #5CB87A, #4A9E66);
   color: #fff;
   font-size: 30rpx;
   font-weight: 500;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   border: none;
   margin-bottom: 24rpx;
   box-shadow: 0 8rpx 24rpx rgba(39, 174, 96, 0.3);
@@ -246,7 +246,7 @@ async function createGoal() {
 
 .add-form {
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   padding: 28rpx;
   margin-bottom: 24rpx;
   box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
@@ -258,7 +258,7 @@ async function createGoal() {
 
 .form-label {
   font-size: 26rpx;
-  color: #666;
+  color: #6B6B70;
   margin-bottom: 12rpx;
   display: block;
 }
@@ -288,8 +288,8 @@ async function createGoal() {
   background: #f8f9fa;
 
   &.cat-active {
-    background: #e8f5e9;
-    box-shadow: 0 0 0 2rpx #27ae60;
+    background: #E8F8EF;
+    box-shadow: 0 0 0 2rpx #5CB87A;
   }
 }
 
@@ -299,14 +299,14 @@ async function createGoal() {
 
 .cat-label {
   font-size: 24rpx;
-  color: #333;
+  color: #2C2C2E;
 }
 
 .save-btn {
   width: 100%;
   height: 88rpx;
   line-height: 88rpx;
-  background: #27ae60;
+  background: #5CB87A;
   color: #fff;
   font-size: 30rpx;
   font-weight: 500;
@@ -326,14 +326,14 @@ async function createGoal() {
 .section-title {
   font-size: 28rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
   margin-bottom: 16rpx;
   display: block;
 }
 
 .goal-card {
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   padding: 24rpx;
   margin-bottom: 12rpx;
   box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.04);
@@ -366,13 +366,13 @@ async function createGoal() {
 
 .goal-title {
   font-size: 30rpx;
-  color: #333;
+  color: #2C2C2E;
   font-weight: 500;
 }
 
 .goal-category {
   font-size: 22rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-top: 4rpx;
 }
 
@@ -383,13 +383,13 @@ async function createGoal() {
 }
 
 .status-active {
-  background: #e8f5e9;
-  color: #27ae60;
+  background: #E8F8EF;
+  color: #5CB87A;
 }
 
 .status-completed {
-  background: #e3f2fd;
-  color: #3498db;
+  background: #E8F4F8;
+  color: #5A9BB8;
 }
 
 .goal-progress {
@@ -405,14 +405,14 @@ async function createGoal() {
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #27ae60, #2ecc71);
+  background: linear-gradient(90deg, #5CB87A, #70D494);
   border-radius: 6rpx;
   transition: width 0.3s;
 }
 
 .progress-text {
   font-size: 22rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-top: 8rpx;
   display: block;
 }
@@ -431,13 +431,13 @@ async function createGoal() {
 
 .empty-text {
   font-size: 32rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-bottom: 12rpx;
 }
 
 .empty-desc {
   font-size: 24rpx;
-  color: #ccc;
+  color: #C5C5C8;
   text-align: center;
 }
 </style>

@@ -1,32 +1,33 @@
-/* 主题色 */
-$primary-color: #4a90d9;
-$primary-light: #6ba3e0;
-$primary-dark: #3a7bc8;
+/* 主题色 — Organic Warmth */
+$primary-color: #3B82A0;
+$primary-light: #5A9BB8;
+$primary-dark: #2D6A82;
+$primary-bg: #E8F4F8;
 
 /* 功能色 */
-$success-color: #27ae60;
-$warning-color: #f39c12;
-$danger-color: #e74c3c;
-$info-color: #3498db;
+$success-color: #5CB87A;
+$warning-color: #E8B84A;
+$danger-color: #E07070;
+$info-color: #5A9BB8;
 
 /* 四色灯 */
-$light-red: #e74c3c;
-$light-yellow: #f39c12;
-$light-blue: #3498db;
-$light-green: #27ae60;
+$light-red: #E07070;
+$light-yellow: #E8B84A;
+$light-blue: #5A9BB8;
+$light-green: #5CB87A;
 
-/* 中性色 */
-$text-primary: #333333;
-$text-secondary: #666666;
-$text-placeholder: #999999;
-$border-color: #e8e8e8;
-$bg-color: #f5f7fa;
+/* 中性色 (暖灰系) */
+$text-primary: #2C2C2E;
+$text-secondary: #6B6B70;
+$text-placeholder: #A0A0A5;
+$border-color: #E8E5E0;
+$bg-color: #F8F6F3;
 $bg-white: #ffffff;
 
 /* 圆角 */
-$radius-sm: 8rpx;
-$radius-md: 16rpx;
-$radius-lg: 24rpx;
+$radius-sm: 12rpx;
+$radius-md: 20rpx;
+$radius-lg: 28rpx;
 $radius-round: 999rpx;
 
 /* 间距 */

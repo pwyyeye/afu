@@ -110,7 +110,7 @@ function showAbout() {
   align-items: center;
   gap: 24rpx;
   padding: 36rpx 28rpx;
-  background: linear-gradient(135deg, #4a90d9 0%, #6ba3e0 100%);
+  background: linear-gradient(135deg, #3B82A0 0%, #5A9BB8 100%);
   border-radius: 20rpx;
   margin-bottom: 32rpx;
 }
@@ -154,7 +154,7 @@ function showAbout() {
 
 .menu-group {
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   overflow: hidden;
   margin-bottom: 24rpx;
 }
@@ -178,25 +178,25 @@ function showAbout() {
 .menu-text {
   flex: 1;
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
 }
 
 .menu-value {
   font-size: 26rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-right: 8rpx;
 }
 
 .menu-arrow {
   font-size: 32rpx;
-  color: #ccc;
+  color: #C5C5C8;
 }
 
 .logout-btn, .login-btn {
   width: 100%;
   height: 88rpx;
   line-height: 88rpx;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   border: none;
   font-size: 30rpx;
   margin-top: 16rpx;
@@ -204,12 +204,12 @@ function showAbout() {
 
 .logout-btn {
   background: #fff;
-  color: #e74c3c;
-  border: 2rpx solid #e74c3c;
+  color: #E07070;
+  border: 2rpx solid #E07070;
 }
 
 .login-btn {
-  background: linear-gradient(135deg, #4a90d9, #357abd);
+  background: linear-gradient(135deg, #3B82A0, #2D6A82);
   color: #fff;
 }
 
@@ -217,7 +217,7 @@ function showAbout() {
   display: block;
   text-align: center;
   font-size: 22rpx;
-  color: #ccc;
+  color: #C5C5C8;
   margin-top: 48rpx;
 }
 </style>

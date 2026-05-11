@@ -165,12 +165,12 @@ function goTo(url: string) {
 .title {
   font-size: 48rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
 }
 
 .subtitle {
   font-size: 26rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-top: 4rpx;
 }
 
@@ -199,15 +199,15 @@ function goTo(url: string) {
 .action-icon-wrap {
   width: 96rpx;
   height: 96rpx;
-  border-radius: 24rpx;
+  border-radius: 28rpx;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.action-blue { background: #e3f2fd; }
-.action-green { background: #e8f5e9; }
-.action-orange { background: #fff3e0; }
+.action-blue { background: #E8F4F8; }
+.action-green { background: #E8F8EF; }
+.action-orange { background: #FFF3E6; }
 .action-purple { background: #f3e5f5; }
 
 .action-icon {
@@ -216,7 +216,7 @@ function goTo(url: string) {
 
 .action-text {
   font-size: 24rpx;
-  color: #666;
+  color: #6B6B70;
 }
 
 .section {
@@ -232,14 +232,14 @@ function goTo(url: string) {
 .section-title {
   font-size: 30rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
   margin-bottom: 16rpx;
   display: block;
 }
 
 .section-more {
   font-size: 24rpx;
-  color: #4a90d9;
+  color: #3B82A0;
   margin-bottom: 16rpx;
 }
 
@@ -247,7 +247,7 @@ function goTo(url: string) {
   display: flex;
   align-items: center;
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   padding: 28rpx;
   box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
 }
@@ -263,17 +263,17 @@ function goTo(url: string) {
 .overview-value {
   font-size: 40rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
 }
 
-.bmi-under { color: #3498db; }
-.bmi-normal { color: #27ae60; }
-.bmi-over { color: #f39c12; }
-.bmi-obese { color: #e74c3c; }
+.bmi-under { color: #5A9BB8; }
+.bmi-normal { color: #5CB87A; }
+.bmi-over { color: #E8B84A; }
+.bmi-obese { color: #E07070; }
 
 .overview-label {
   font-size: 22rpx;
-  color: #999;
+  color: #A0A0A5;
 }
 
 .overview-divider {
@@ -287,9 +287,9 @@ function goTo(url: string) {
   align-items: flex-start;
   gap: 16rpx;
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   padding: 28rpx;
-  border-left: 6rpx solid #4a90d9;
+  border-left: 6rpx solid #3B82A0;
   box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
 }
 
@@ -300,7 +300,7 @@ function goTo(url: string) {
 
 .tip-text {
   font-size: 26rpx;
-  color: #666;
+  color: #6B6B70;
   line-height: 1.6;
 }
 
@@ -327,12 +327,12 @@ function goTo(url: string) {
 
 .recent-title {
   font-size: 26rpx;
-  color: #333;
+  color: #2C2C2E;
 }
 
 .recent-date {
   font-size: 22rpx;
-  color: #999;
+  color: #A0A0A5;
 }
 
 .recent-empty {
@@ -344,6 +344,6 @@ function goTo(url: string) {
 
 .recent-empty-text {
   font-size: 24rpx;
-  color: #ccc;
+  color: #C5C5C8;
 }
 </style>

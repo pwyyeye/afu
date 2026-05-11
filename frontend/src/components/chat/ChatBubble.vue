@@ -173,7 +173,7 @@ function playVoice() {
 }
 
 .ai-avatar {
-  background: #e8f0fe;
+  background: #E8F4F8;
   margin-right: 16rpx;
 }
 
@@ -194,7 +194,7 @@ function playVoice() {
 }
 
 .user-bubble {
-  background: #4a90d9;
+  background: #3B82A0;
   border-bottom-right-radius: 4rpx;
 }
 
@@ -221,16 +221,16 @@ function playVoice() {
 }
 
 .ai-bubble .bubble-text {
-  color: #333333;
+  color: #2C2C2E;
 }
 
 .typing-text {
-  color: #999;
+  color: #A0A0A5;
 }
 
 .cursor {
   font-size: 28rpx;
-  color: #4a90d9;
+  color: #3B82A0;
   animation: blink 0.8s infinite;
   margin-left: 2rpx;
 }
@@ -259,7 +259,7 @@ function playVoice() {
 
 .voice-text {
   font-size: 26rpx;
-  color: #666;
+  color: #6B6B70;
 }
 
 .disclaimer {

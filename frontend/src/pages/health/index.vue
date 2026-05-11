@@ -153,15 +153,15 @@ function goTo(url: string) {
 .menu-icon-wrap {
   width: 96rpx;
   height: 96rpx;
-  border-radius: 24rpx;
+  border-radius: 28rpx;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.bg-blue { background: #e3f2fd; }
-.bg-green { background: #e8f5e9; }
-.bg-orange { background: #fff3e0; }
+.bg-blue { background: #E8F4F8; }
+.bg-green { background: #E8F8EF; }
+.bg-orange { background: #FFF3E6; }
 .bg-purple { background: #f3e5f5; }
 .bg-teal { background: #e0f2f1; }
 .bg-red { background: #ffebee; }
@@ -174,7 +174,7 @@ function goTo(url: string) {
 
 .menu-text {
   font-size: 24rpx;
-  color: #666;
+  color: #6B6B70;
 }
 
 .section {
@@ -190,20 +190,20 @@ function goTo(url: string) {
 .section-title {
   font-size: 30rpx;
   font-weight: bold;
-  color: #333;
+  color: #2C2C2E;
   margin-bottom: 16rpx;
   display: block;
 }
 
 .section-more {
   font-size: 24rpx;
-  color: #4a90d9;
+  color: #3B82A0;
   margin-bottom: 16rpx;
 }
 
 .summary-card {
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   padding: 28rpx;
   box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
 }
@@ -224,12 +224,12 @@ function goTo(url: string) {
 .summary-value {
   font-size: 40rpx;
   font-weight: bold;
-  color: #4a90d9;
+  color: #3B82A0;
 }
 
 .summary-label {
   font-size: 22rpx;
-  color: #999;
+  color: #A0A0A5;
 }
 
 .summary-divider {
@@ -260,7 +260,7 @@ function goTo(url: string) {
 
 .tl-title {
   font-size: 26rpx;
-  color: #333;
+  color: #2C2C2E;
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -269,7 +269,7 @@ function goTo(url: string) {
 
 .tl-desc {
   font-size: 22rpx;
-  color: #999;
+  color: #A0A0A5;
   display: block;
   margin-top: 4rpx;
   overflow: hidden;
@@ -279,7 +279,7 @@ function goTo(url: string) {
 
 .tl-date {
   font-size: 22rpx;
-  color: #ccc;
+  color: #C5C5C8;
   flex-shrink: 0;
 }
 
@@ -292,13 +292,13 @@ function goTo(url: string) {
 
 .empty-text {
   font-size: 28rpx;
-  color: #999;
+  color: #A0A0A5;
   display: block;
 }
 
 .empty-desc {
   font-size: 22rpx;
-  color: #ccc;
+  color: #C5C5C8;
   margin-top: 8rpx;
   display: block;
 }

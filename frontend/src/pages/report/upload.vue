@@ -114,8 +114,8 @@ async function submitReport() {
   align-items: center;
   padding: 40rpx 24rpx;
   background: #fff;
-  border-radius: 16rpx;
-  border: 2rpx dashed #4a90d9;
+  border-radius: 20rpx;
+  border: 2rpx dashed #3B82A0;
 }
 
 .option-icon {
@@ -125,13 +125,13 @@ async function submitReport() {
 
 .option-title {
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
   font-weight: 500;
 }
 
 .option-desc {
   font-size: 22rpx;
-  color: #999;
+  color: #A0A0A5;
   margin-top: 4rpx;
 }
 
@@ -141,7 +141,7 @@ async function submitReport() {
 
 .preview-title {
   font-size: 28rpx;
-  color: #333;
+  color: #2C2C2E;
   margin-bottom: 16rpx;
   display: block;
 }
@@ -161,7 +161,7 @@ async function submitReport() {
 .preview-image {
   width: 100%;
   height: 100%;
-  border-radius: 8rpx;
+  border-radius: 12rpx;
 }
 
 .remove-btn {
@@ -172,7 +172,7 @@ async function submitReport() {
   height: 40rpx;
   line-height: 40rpx;
   text-align: center;
-  background: #e74c3c;
+  background: #E07070;
   color: #fff;
   border-radius: 50%;
   font-size: 28rpx;
@@ -180,7 +180,7 @@ async function submitReport() {
 
 .form-section {
   background: #fff;
-  border-radius: 16rpx;
+  border-radius: 20rpx;
   padding: 24rpx;
   margin-bottom: 32rpx;
 }
@@ -196,7 +196,7 @@ async function submitReport() {
 
 .form-label {
   font-size: 26rpx;
-  color: #666;
+  color: #6B6B70;
   margin-bottom: 8rpx;
   display: block;
 }
@@ -211,7 +211,7 @@ async function submitReport() {
   width: 100%;
   height: 96rpx;
   line-height: 96rpx;
-  background: #4a90d9;
+  background: #3B82A0;
   color: #fff;
   font-size: 32rpx;
   font-weight: bold;
@@ -219,7 +219,7 @@ async function submitReport() {
   border: none;
 
   &[disabled] {
-    background: #a0c4e8;
+    background: #8FBFDB;
   }
 }
 </style>
