@@ -64,6 +64,9 @@ export const useChatStore = defineStore('chat', () => {
       created_at: new Date().toISOString(),
     }
     messages.value.push(aiMsg)
+    // Use the proxied reference from the reactive array — the plain aiMsg object
+    // won't trigger Vue reactivity when its properties change.
+    const aiMsgRef = messages.value[messages.value.length - 1]
 
     // Try SSE streaming first
     isStreaming.value = true
@@ -73,8 +76,33 @@ export const useChatStore = defineStore('chat', () => {
       const token = uni.getStorageSync('token')
       const response = await new Promise<string>((resolve, reject) => {
         let fullContent = ''
+        let realTimeChunks = false
+        let sseBuffer = ''
+        const decoder = new TextDecoder()
 
-        // Use uni.request with chunked transfer for SSE-like behavior
+        // Parse SSE events, updating content in real-time
+        function processSSEText(text: string) {
+          sseBuffer += text
+          const parts = sseBuffer.split('\n\n')
+          sseBuffer = parts.pop() || ''
+          for (const part of parts) {
+            for (const line of part.split('\n')) {
+              if (line.startsWith('data: ')) {
+                try {
+                  const data = JSON.parse(line.slice(6))
+                  if (data.type === 'chunk') {
+                    fullContent += data.content
+                    aiMsgRef.content = fullContent
+                    streamingContent.value = fullContent
+                  } else if (data.type === 'done') {
+                    aiMsgRef.id = data.message_id || aiMsgRef.id
+                  }
+                } catch {}
+              }
+            }
+          }
+        }
+
         const requestTask = uni.request({
           url: `${BASE_URL}/api/v1/chat/messages/stream`,
           method: 'POST',
@@ -89,66 +117,93 @@ export const useChatStore = defineStore('chat', () => {
           },
           enableChunked: true,
           success: (res) => {
-            // Parse the complete response as SSE
+            if (realTimeChunks) {
+              resolve(fullContent)
+              return
+            }
+            // H5 fallback: complete response arrived at once — parse SSE
             const text = typeof res.data === 'string' ? res.data : ''
+            // Extract all chunk contents from the complete SSE response
+            const chunks: string[] = []
             const lines = text.split('\n')
             for (const line of lines) {
               if (line.startsWith('data: ')) {
                 try {
                   const data = JSON.parse(line.slice(6))
-                  if (data.type === 'chunk') {
-                    fullContent += data.content
-                  } else if (data.type === 'done') {
-                    aiMsg.id = data.message_id || aiMsg.id
-                  }
+                  if (data.type === 'chunk') chunks.push(data.content)
+                  else if (data.type === 'done') aiMsgRef.id = data.message_id || aiMsgRef.id
                 } catch {}
               }
             }
-            resolve(fullContent)
+            if (chunks.length) {
+              // Simulate streaming: feed chunks progressively
+              fullContent = ''
+              let i = 0
+              const feedTimer = setInterval(() => {
+                if (i >= chunks.length) {
+                  clearInterval(feedTimer)
+                  resolve(fullContent)
+                  return
+                }
+                fullContent += chunks[i]
+                aiMsgRef.content = fullContent
+                streamingContent.value = fullContent
+                i++
+              }, 50)
+            } else if (text) {
+              // No SSE framing — use raw text as-is
+              fullContent = text
+              aiMsgRef.content = fullContent
+              streamingContent.value = fullContent
+              resolve(fullContent)
+            } else {
+              resolve('')
+            }
           },
           fail: (err) => reject(err),
         })
 
-        // Listen for chunked data
+        // Listen for chunked data (real-time streaming, works on mini-programs)
         if (requestTask && typeof requestTask.onChunkReceived === 'function') {
           requestTask.onChunkReceived((res) => {
-            const text = new TextDecoder().decode(res.data)
-            const lines = text.split('\n')
-            for (const line of lines) {
-              if (line.startsWith('data: ')) {
-                try {
-                  const data = JSON.parse(line.slice(6))
-                  if (data.type === 'chunk') {
-                    fullContent += data.content
-                    aiMsg.content = fullContent
-                    streamingContent.value = fullContent
-                  } else if (data.type === 'done') {
-                    aiMsg.id = data.message_id || aiMsg.id
-                  }
-                } catch {}
+            realTimeChunks = true
+            let text = ''
+            try {
+              if (typeof res.data === 'string') {
+                text = res.data
+              } else {
+                text = decoder.decode(new Uint8Array(res.data))
               }
+            } catch {
+              text = typeof res.data === 'string' ? res.data : ''
             }
+            if (text) processSSEText(text)
           })
         }
       })
 
-      aiMsg.content = response || aiMsg.content
+      aiMsgRef.content = response || aiMsgRef.content
     } catch {
-      // Fallback to non-streaming
+      // Fallback to non-streaming endpoint
       try {
         const res = await request.post<{ content: string; message_id: string }>(
           '/api/v1/chat/messages',
           { session_id: sessionId, content, content_type: contentType }
         )
-        aiMsg.content = res.content
-        aiMsg.id = res.message_id || aiMsg.id
+        aiMsgRef.content = res.content
+        aiMsgRef.id = res.message_id || aiMsgRef.id
       } catch {
-        aiMsg.content = '抱歉，服务暂时不可用，请稍后重试。'
+        aiMsgRef.content = '抱歉，服务暂时不可用，请稍后重试。'
       }
-    } finally {
+    }
+
+    // Keep isStreaming true for ChatBubble typewriter animation
+    const finalLen = aiMsgRef.content?.length || 0
+    const typewriterDelay = Math.min(Math.max(finalLen * 30, 300), 2000)
+    setTimeout(() => {
       isStreaming.value = false
       streamingContent.value = ''
-    }
+    }, typewriterDelay)
   }
 
   async function sendVoiceMessage(sessionId: string, filePath: string) {
@@ -207,6 +262,7 @@ export const useChatStore = defineStore('chat', () => {
       created_at: new Date().toISOString(),
     }
     messages.value.push(aiMsg)
+    const aiMsgRef = messages.value[messages.value.length - 1]
 
     try {
       const uploadRes: any = await new Promise((resolve, reject) => {
@@ -223,9 +279,9 @@ export const useChatStore = defineStore('chat', () => {
         })
       })
 
-      aiMsg.content = uploadRes.content || '图片已收到，正在分析...'
+      aiMsgRef.content = uploadRes.content || '图片已收到，正在分析...'
     } catch {
-      aiMsg.content = '图片分析失败，请重试。'
+      aiMsgRef.content = '图片分析失败，请重试。'
     } finally {
       isStreaming.value = false
     }
